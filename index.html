@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>GTU - القناة التعليمية العمرانية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        :root {
+            --bg: #878c99;
+            --accent: #f97316; /* برتقالي من نفس ألوان الشعار */
+            --accent-soft: #adadad26;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --radius-lg: 18px;
+            --shadow-soft: 0 18px 40px rgba(177, 177, 177, 0.6);
+        }
+
+        body {
+            background: radial-gradient(circle at top, #1d2538 0, #020617 55%);
+            color: var(--text);
+            font-family: "Cairo", system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            max-width: 1180px;
+            margin: auto;
+            padding: 24px 16px 40px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .brand img {
+            width: 70px;
+            height: auto;
+        }
+
+        .brand-text h1 {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .brand-text p {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 3px;
+        }
+
+        nav a {
+            padding: 7px 14px;
+            margin: 4px;
+            border-radius: 999px;
+            color: var(--muted);
+            border: 1px solid rgba(148,163,184,0.3);
+            text-decoration: none;
+            transition: 0.2s;
+            font-size: 13px;
+        }
+
+        nav a:hover {
+            color: var(--text);
+            border-color: var(--accent);
+        }
+
+        /* Cards */
+        section {
+            margin-bottom: 32px;
+        }
+
+        section h2 {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .section-sub {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 14px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 14px;
+        }
+
+        @media (min-width: 720px) {
+            .grid-2 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .card {
+            background: rgba(15,23,42,0.95);
+            padding: 14px;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(31,41,55,0.8);
+            transition: 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+
+        .btn-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .btn-download {
+            padding: 7px 14px;
+            background: var(--accent-soft);
+            border: 1px solid var(--accent);
+            border-radius: 999px;
+            color: #ffd4b3;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+        }
+
+        footer {
+            border-top: 1px solid rgba(148,163,184,0.4);
+            padding-top: 14px;
+            font-size: 12px;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header>
+            <div class="brand">
+                <img src="GTU.png" alt="GTU Logo">
+                <div class="brand-text">
+                    <h1>GTU – قناة تعليمية في مجال العمران ومهن المدينة</h1>
+                    <p>دروس • برامج • خرائط • وثائق تقنية</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="#programs">البرامج</a>
+                <a href="#courses">الدروس</a>
+                <a href="#articles">المقالات</a>
+                <a href="#downloads">الملفات</a>
+            </nav>
+        </header>
+
+        <!-- البرامج -->
+        <section id="programs">
+            <h2>البرامج العمرانية والهندسية</h2>
+            <p class="section-sub">أهم الأدوات المستخدمة في الهندسة والعمران.</p>
+
+            <div class="grid grid-3">
+                <article class="card">
+                    <h3>AutoCAD</h3>
+                    <p class="section-sub">برنامج رسم هندسي</p>
+                    <p>أداة أساسية في التصميم المعماري والعمراني.</p>
+                    <a href="#" class="https://t.me/GTU_Students/16">تحميل</a>
+                </article>
+
+                <article class="card">
+                    <h3>ArcGIS</h3>
+                    <p class="section-sub">نظم المعلومات الجغرافية</p>
+                    <p>تحليل الخرائط والبيانات المكانية للمدن.</p>
+                    <a href="#" class="https://t.me/GTU_Students/5">تحميل</a>
+                </article>
+
+                <article class="card">
+                    <h3>SketchUp</h3>
+                    <p class="section-sub">تصميم ثلاثي الأبعاد</p>
+                    <p>مهم لطلاب العمران لبناء النماذج.</p>
+                    <a href="#" class="https://t.me/GTU_Students/14">تحميل</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- الدروس -->
+        <section id="courses">
+            <h2>الدروس التعليمية</h2>
+            <p class="section-sub">محاضرات متنوعة في التعمير وإعداد التراب.</p>
+
+            <div class="grid grid-2">
+                <article class="card">
+                    <h3>تهيئة المجال</h3>
+                    <p class="section-sub">12 درس • مبتدئ</p>
+                    <a href="https://www.youtube.com/@Gestion_des_techniques_urbain" class="btn-link">مشاهدة</a>
+                </article>
+
+                <article class="card">
+                    <h3>تنظيم المدينة</h3>
+                    <p class="section-sub">9 دروس • متوسط</p>
+                    <a href="https://www.youtube.com/@Gestion_des_techniques_urbain" class="btn-link">مشاهدة</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- مقالات -->
+        <section id="articles">
+            <h2>المقالات والشروحات</h2>
+            <p class="section-sub">مقالات في التخطيط الحضري وتهيئة المجال.</p>
+
+            <div class="grid grid-2">
+                <article class="card">
+                    <h3>وثائق التهيئة الحضرية</h3>
+                    <p>تعريف بوثائق إعداد التراب ودفاتر التحملات.</p>
+                    <a href="#" class="btn-link">قراءة</a>
+                </article>
+
+                <article class="card">
+                    <h3>المجال الجغرافي والتعمير</h3>
+                    <p>العلاقة بين الجغرافيا والفعل العمراني.</p>
+                    <a href="#" class="btn-link">قراءة</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ملفات -->
+        <section id="downloads">
+            <h2>ملفات التحميل (RAR / ZIP)</h2>
+            <p class="section-sub">مشاريع – خرائط – نماذج – وثائق PDF.</p>
+
+            <div class="grid grid-3">
+                <article class="card">
+                    <h3>ملفات درس التهيئة</h3>
+                    <p class="section-sub">RAR • 25MB</p>
+                    <a href="#" class="btn-download">⬇ تحميل</a>
+                </article>
+
+                <article class="card">
+                    <h3>مشروع تهيئة مدينة</h3>
+                    <p class="section-sub">ZIP • 120MB</p>
+                    <a href="#" class="btn-download">⬇ تحميل</a>
+                </article>
+
+                <article class="card">
+                    <h3>خرائط GIS جاهزة</h3>
+                    <p class="section-sub">RAR • 60MB</p>
+                    <a href="#" class="btn-download">⬇ تحميل</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div>© جميع الحقوق محفوظة لقناة GTU.</div>
+            <div>
+                <a class="btn-link" href="https://t.me/GTU_Students">تيليجرام</a> |
+                <a class="btn-link" href="https://www.facebook.com/profile.php?id=100088873879009">فيسبوك</a> |
+                <a class="btn-link" href="https://www.youtube.com/@Gestion_des_techniques_urbain">يوتيوب</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
