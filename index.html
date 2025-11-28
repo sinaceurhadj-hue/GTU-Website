@@ -101,17 +101,14 @@
 
         @media (min-width: 720px) {
             .grid-2 { grid-template-columns: repeat(2, 1fr); }
-            .grid-3 { grid-templte-columns: repeat(3, 1fr); }
-            .grid-4 { grid-templte-columns: repeat(4, 1fr); }
+            .grid-3 { grid-template-columns: repeat(3, 1fr); }
         }
 
         .card {
             background: rgba(15,23,42,0.95);
-            padding: 10px; /* كانت 14px → الآن أصغر */
-            border-radius: 12px; /* تقليل نصف القطر */
+            padding: 14px;
+            border-radius: var(--radius-lg);
             border: 1px solid rgba(31,41,55,0.8);
-            font-size: 12px; /* تقليل حجم النص داخل البطاقة */
-            line-height: 1.4; /* تقليل المسافات بين الأسطر */
             transition: 0.2s ease;
         }
 
@@ -315,7 +312,7 @@
             <h2>ملفات لتحميل بصيغة (RAR / ZIP)</h2>
             <p class="section-sub">مشاريع – خرائط – نماذج – بلوكات – قوالب.</p>
 
-            <div class="grid grid-4">
+            <div class="grid grid-3">
                 <article class="card">
                     <h3>الحدود الإدراية 58 ولاية_OSM_Sadiq_Tahmi</h3>
                     <p class="section-sub">البلديات - الدوائر  - الولايات</p>
