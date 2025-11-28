@@ -101,14 +101,16 @@
 
         @media (min-width: 720px) {
             .grid-2 { grid-template-columns: repeat(2, 1fr); }
-            .grid-3 { grid-template-columns: repeat(3, 1fr); }
+            .grid-3 { grid-templte-columns: repeat(3, 1fr); }
         }
 
         .card {
             background: rgba(15,23,42,0.95);
-            padding: 14px;
-            border-radius: var(--radius-lg);
+            padding: 10px; /* كانت 14px → الآن أصغر */
+            border-radius: 12px; /* تقليل نصف القطر */
             border: 1px solid rgba(31,41,55,0.8);
+            font-size: 12px; /* تقليل حجم النص داخل البطاقة */
+            line-height: 1.4; /* تقليل المسافات بين الأسطر */
             transition: 0.2s ease;
         }
 
